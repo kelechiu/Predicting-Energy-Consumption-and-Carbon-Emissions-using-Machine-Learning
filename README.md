@@ -165,3 +165,92 @@ XGBoost model is chosen in this analysis for its’ high performance and efficie
 <img width="354" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/455ca931-1eb3-4bb9-a187-b6c71df64f86">
 
 #### Target Variable 2: Value_co2_emissions_kt_by_country
+
+<img width="346" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/f5086bc2-ca61-445e-8825-b2b1f8286551">
+
+## 5.4.	KNN Regression
+
+#### Target Variable 1: Primary energy consumption per capita (kWh/person)
+
+<img width="357" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/4b679fc0-b727-45b9-a152-d1434d0b03b3">
+
+#### Target Variable 2: Value_co2_emissions_kt_by_country
+
+<img width="354" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/dd5fdd17-8e90-4e35-8395-15355d4fbf09">
+
+# 5. Model Evaluation
+
+#### Target Variable 1: Primary energy consumption per capita (kWh/person)
+
+<img width="373" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/eec5cff4-1322-42b4-ba89-f22ce0def90c"> <img width="303" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/280be62d-7b54-4d95-8cff-da8695435049">
+
+The Random Forest model outperforms other models with the lowest Mean Squared Error of approximately 9220. The high R-Squared value (0.9958) indicates an excellent fit between the actual values and predicted values. It also suggests that 99.58% of the variance in the target variable (energy consumption) is explained by features in the model.
+
+#### Target Variable 2: Value_co2_emissions_kt_by_country
+
+<img width="314" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/333fd0db-b441-4b29-862e-67a0a18f4767"> 
+
+Linear Regression model outperforms other models with the lowest Mean Squared Error (1.956445×10−21). The R-Squared of 1 indicates an excellent fit between the actual values and predicted values. It suggests that 100% of the variance in the target variable (co2 emissions) is explained by features in the model. However, the model’s extremely low MSE, MAE and perfect R-Squared suggests a potential overfitting and its inability to generalize well to new data. 
+
+Random Forest seems to be the best performing model due to its low Mean Squared Error (77003.39), low Mean Absolute Error (69.36) and high R-Squared (99.9%). An MAE of 69.36 suggests that the average absolute difference between actual and predicted values is 69.36; this value is low considering that values for co2 emissions in the dataset are in millions
+
+## 5.2.	Overfitting Check
+
+Overfitting occurs when a model perfectly learns the training data, capturing the noise and fluctuations rather than the underlying patterns. Random Forest and Linear Regression models are checked for overfitting to prevent poor generalizations on new, unseen data. 
+
+#### Random Forest Model (Primary energy consumption)
+
+<img width="266" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/8c979a49-06e1-4e8a-9af6-bd9268695bbd">
+
+#### Random Forest Model (C02 Emissions)
+
+<img width="274" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/07980cff-d6ce-4f2b-8021-be410cd07b35">
+
+#### Linear Regression (Primary energy consumption)
+
+<img width="384" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/099dd969-fca6-45a6-a71f-756c12e92e37">
+
+#### Linear Regression (CO2 Emissions)
+
+<img width="427" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/b109c97e-24df-4874-864e-d2bfc363ac49">
+
+As seen in the scatter plots above, the predicted values for Random Forest appear to be closely aligned with actual values, and there are no signs of overfitting. However, there seems to be a case of overfitting in the Linear Regression model for CO2 Emissions. As a result, future values of energy consumption and carbon emissions will be predicted using Random Forest.
+
+
+## 5.3.	Random Forest Predictions – Energy Consumption
+
+Energy consumption levels were predicted for India, United States and United Kingdom over the next five years (2021-2025).
+
+<img width="263" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/91da6287-d7c0-4bbf-bcaf-2a10dcb99c5d"> <img width="170" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/3b1c063f-c5e4-4e2b-9a37-d8b0b7163a94">
+
+## 5.4.	Random Forest Predictions – CO2 Emissions
+
+CO2 Emissions were predicted for India, United States and United Kingdom over the next five years (2021-2025).
+
+<img width="270" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/2ef1b8d0-9748-484c-a24e-5066393a5b50"> <img width="161" alt="image" src="https://github.com/kelechiu/Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning/assets/100145388/565b524d-8cf2-46e8-8803-a569557d36e7">
+
+# 6. Professionalism and Ethics in AI on the Cloud 
+
+Although the deployment of machine learning models into cloud computing systems offers unprecedented opportunities for predicting energy consumption levels and carbon emissions, it highlights various ethical requirements that ought to be considered. This section presents the ethical considerations surrounding the deployment of machine learning models on the cloud.
+
+### Data Privacy and Security
+•	Utilise encryption techniques to secure the storage and transmission of data, ensuring data is not readable if it is intercepted by unauthorised access.
+•	Utilize tokenization measures to replace sensitive information with tokens, limiting the risk of authorised access.
+•	Implement strict access control measures to ensure data is only accessible to authorised personnel.
+
+### Model Documentation and Transparency
+•	Ensure models are easily interpreted and maintain a detailed documentation of its architecture, features and processes.
+
+### Bias and Fairness
+•	Assess the model regularly to identify and mitigate biases in datasets. 
+•	Ensure training datasets reflect diverse demographics to reduce biases in predicting energy consumption and carbon emissions.
+
+### User Consent and Awareness
+•	Consent must be obtained from data owner before collecting their data for model training and predictions.
+•	The purpose and implications of research analysis must be communicated to data owners.
+
+### Model Monitoring
+•	Implement real-time monitoring of the model’s predictions to detect issues and track its performance.
+
+### Regulatory Compliance
+•	Conduct regular audits to ensure compliance with industry regulations and standards governing machine learning deployment on the cloud.
