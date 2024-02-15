@@ -1,4 +1,4 @@
-# Predicting-Energy-Consumption-and-Carbon-Emissions-using-Machine-Learning
+# Predicting Energy Consumption & Carbon Emissions using Machine Learning
 
 # 1. Data Description
 The global data on sustainability dataset is a collection of sustainable energy indicators for 176 countries between 2000 and 2020. It forms the foundation of this research paper, and it will be utilised to predict future energy demand and carbon emission levels. The dataset has 3649 rows each representing a unique country’s information. It also has 21 columns/features that are described in detail below: 
